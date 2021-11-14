@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
 import Router from './router';
 import './index.less';
 
 import reportWebVitals from './reportWebVitals';
+import {Layout} from "@components/Layout";
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
-          <Router />
+          <Layout>
+              <Router/>
+          </Layout>
       </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
