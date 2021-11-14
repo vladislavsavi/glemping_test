@@ -6,7 +6,7 @@ import {Menu} from "./Menu";
 export const UserMenu: FC = () => {
     return (
         <Dropdown overlay={<Menu/>}>
-            <Button shape='circle' size='large' icon={<UserOutlined/>}/>
+            <Button type='ghost' shape='circle' size='large' icon={<UserOutlined/>}/>
         </Dropdown>
     );
 }
