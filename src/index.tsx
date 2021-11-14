@@ -5,7 +5,7 @@ import Router from './router';
 import './index.less';
 
 import reportWebVitals from './reportWebVitals';
-import {Layout} from "@components/Layout";
+import {Layout} from "@components";
 
 ReactDOM.render(
   <React.StrictMode>
