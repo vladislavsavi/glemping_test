@@ -4,7 +4,7 @@ import {Route, Routes} from "react-router-dom";
 function Router() {
     return (
         <Routes>
-            <Route path="/" element={<h1>ad</h1>}/>
+            <Route path="/" element={<h1>Home</h1>}/>
         </Routes>
     );
 }
