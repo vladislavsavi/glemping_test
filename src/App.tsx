@@ -1,9 +1,10 @@
 import React from 'react';
+import {Header} from './components';
 
 function App() {
   return (
       <>
-        <h1>asd</h1>
+        <Header/>
       </>
   );
 }
