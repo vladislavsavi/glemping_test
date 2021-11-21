@@ -1,4 +1,36 @@
+@import "~antd/lib/style/themes/default";
+
+@border-of-inaccessibility: 15px;
+@screen-xll: 1920px;
+
 .container {
-  width: 1900px;
+  width: @screen-xll - @border-of-inaccessibility;
   margin: 0 auto;
+}
+
+.container(@width) {
+  .container {
+    width: @width - @border-of-inaccessibility;
+  }
+}
+
+@media only screen and (max-width: @screen-xll) {
+  .container(@screen-xl);
+}
+
+@media only screen and (max-width: @screen-xl) {
+  .container(@screen-lg);
+}
+@media only screen and (max-width: @screen-lg) {
+  .container {
+    max-width: @screen-md;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  .container {
+    padding-left: @border-of-inaccessibility;
+    padding-right: @border-of-inaccessibility;
+  }
 }
