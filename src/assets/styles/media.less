@@ -1,0 +1,28 @@
+@import "~antd/lib/style/themes/default";
+
+@border-of-inaccessibility: 15px;
+
+.container(@width) {
+  .container {
+    width: @width - @border-of-inaccessibility;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .container(@screen-xl);
+}
+
+@media only screen and (max-width: @screen-xl) {
+  .container(@screen-lg);
+}
+@media only screen and (max-width: @screen-lg) {
+  .container(@screen-md);
+}
+@media only screen and (max-width: @screen-md) {
+  width: 100%;
+  padding: 0 @border-of-inaccessibility;
+}
+@media only screen and (max-width: @screen-sm) {
+  .container {
+  }
+}
