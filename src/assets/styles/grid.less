@@ -1,10 +1,13 @@
 @import "~antd/lib/style/themes/default";
 
 @border-of-inaccessibility: 15px;
-@screen-xll: 1920px;
+@screen-xxl: 1440px;
+@screen-xl: 1220px;
+@screen-lg: 1024px;
+@screen-md: 768px;
 
 .container {
-  width: @screen-xll - @border-of-inaccessibility;
+  width: @screen-xxl - @border-of-inaccessibility;
   margin: 0 auto;
 }
 
@@ -14,7 +17,7 @@
   }
 }
 
-@media only screen and (max-width: @screen-xll) {
+@media only screen and (max-width: @screen-xxl) {
   .container(@screen-xl);
 }
 
@@ -23,13 +26,7 @@
 }
 @media only screen and (max-width: @screen-lg) {
   .container {
-    max-width: @screen-md;
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: @screen-md) {
-  .container {
     padding-left: @border-of-inaccessibility;
     padding-right: @border-of-inaccessibility;
   }
