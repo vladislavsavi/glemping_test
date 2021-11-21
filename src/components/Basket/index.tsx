@@ -11,7 +11,7 @@ interface Props {
 
 export const Basket: FC<Props> = ({ itemCount = 0 }) => {
   return (
-    <Link to="/">
+    <Link to="/basket">
       <Badge className={classes.badge} count={itemCount}>
         <Button
           type="primary"

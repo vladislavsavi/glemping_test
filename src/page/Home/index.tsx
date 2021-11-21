@@ -1,10 +1,11 @@
 import { FC } from "react";
-import { Greeting } from "./components";
+import { Greeting, Services } from "./components";
 
 const Home: FC = () => {
   return (
     <>
       <Greeting />
+      <Services />
     </>
   );
 };

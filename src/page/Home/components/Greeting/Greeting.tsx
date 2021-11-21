@@ -2,15 +2,15 @@ import { FC } from "react";
 import { Typography } from "antd";
 import classes from "./Greeting.module.less";
 
-const { Title, Paragraph, Text } = Typography;
+const { Paragraph, Text } = Typography;
 
 export const Greeting: FC = () => {
   return (
     <section className={classes.greetingSection}>
-      <Title className={classes.title}>
-        Glam<Text className={classes.thin}>Ping</Text>
-      </Title>
-      <Paragraph className={classes.about}>
+      <h1 className={classes.title}>
+        Glam<span>Ping</span>
+      </h1>
+      <Paragraph className="text-thin">
         <Text italic strong>
           Глэмпинг
         </Text>{" "}
