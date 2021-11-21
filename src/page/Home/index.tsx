@@ -1,7 +1,12 @@
 import { FC } from "react";
+import { Greeting } from "./components";
 
 const Home: FC = () => {
-  return <h1>HOME 1</h1>;
+  return (
+    <>
+      <Greeting />
+    </>
+  );
 };
 
 export default Home;
